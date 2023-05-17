@@ -3,11 +3,85 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --ct-primary-100: #fff7ec;
+  --ct-primary-200: #ffe6c0;
+  --ct-primary-300: #ffd595;
+  --ct-primary-400: #ffc46a;
+  --ct-primary-500: #f2aa3c;
+  --ct-primary-600: #d08e29;
+  --ct-primary-700: #ae7319;
+  --ct-primary-800: #8c5a0d;
+  --ct-primary-900: #6a4204;
+  --ct-primary-1000: #482c00;
+  --ct-primary-1100: #050c0a;
+
+  --ct-secondary-100: #fbf6f1;
+  --ct-secondary-200: #f8f1e8;
+  --ct-secondary-300: #f5eadd;
+  --ct-secondary-400: #f1e2d2;
+  --ct-secondary-500: #eedbc6;
+  --ct-secondary-600: #ead4bb;
+  --ct-secondary-700: #c3b19c;
+  --ct-secondary-800: #9c8d7d;
+  --ct-secondary-900: #756a5e;
+  --ct-secondary-1000: #4e473e;
+  --ct-secondary-1100: #2f2a25;
+
+  --ct-grey-100: #fffefc;
+  --ct-grey-200: #d1cfcc;
+  --ct-grey-300: #b2b0ab;
+  --ct-grey-400: #8c8880;
+  --ct-grey-500: #666056;
+  --ct-grey-600: #3f392c;
+  --ct-grey-700: #191102;
+  --ct-grey-800: #150e02;
+  --ct-grey-900: #0d0901;
+  --ct-grey-1000: #050300;
+
+  --ct-red-100: #ebd0d0;
+  --ct-red-200: #deb1b1;
+  --ct-red-300: #cd8a8a;
+  --ct-red-400: #bc6262;
+  --ct-red-500: #ac3b3b;
+  --ct-red-600: #9b1414;
+  --ct-red-700: #811111;
+  --ct-red-800: #670d0d;
+  --ct-red-900: #4e0a0a;
+  --ct-red-1000: #340707;
+  --ct-red-1100: #1f0404;
+
+  --ct-yellow-100: #fff1cc;
+  --ct-yellow-200: #ffe7aa;
+  --ct-yellow-300: #ffdc80;
+  --ct-yellow-400: #ffd055;
+  --ct-yellow-500: #ffc42b;
+  --ct-yellow-600: #ffb800;
+  --ct-yellow-700: #d59900;
+  --ct-yellow-800: #aa7b00;
+  --ct-yellow-900: #805c00;
+  --ct-yellow-1000: #553d00;
+  --ct-yellow-1100: #332500;
+
+  --ct-white: #ffffff;
+
+  --ct-green-100: #cdf2e2;
+  --ct-green-200: #ace9cf;
+  --ct-green-300: #82dfb8;
+  --ct-green-400: #58d4a0;
+  --ct-green-500: #2fc988;
+  --ct-green-600: #05be70;
+  --ct-green-700: #049e5d;
+  --ct-green-800: #037f4b;
+  --ct-green-900: #035f38;
+  --ct-green-1000: #023f25;
+  --ct-green-1100: #012616;
 }
 
+html,
+body,
+:root {
+  height: 100%;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -18,10 +92,63 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--ct-primary-100);
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("/assets/fonts/Sora-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sora";
+  src: url("/assets/fonts/Sora-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sora";
+  src: url("/assets/fonts/Sora-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("/assets/fonts/Sora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sora";
+  src: url("/assets/fonts/Sora-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sora";
+  src: url("/assets/fonts/Sora-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sora";
+  src: url("/assets/fonts/Sora-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("/assets/fonts/Sora-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("/assets/fonts/Sora-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
