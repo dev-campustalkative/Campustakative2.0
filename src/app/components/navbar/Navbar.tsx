@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "../Container";
+import Join from "./Join";
 import Logo from "./Logo";
 import Menu from "./Menu";
 
@@ -12,6 +13,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between gap-3 md:gap-0">
             <Logo />
             <Menu />
+            <Join />
           </div>
         </Container>
       </div>

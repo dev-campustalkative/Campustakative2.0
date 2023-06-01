@@ -152,3 +152,21 @@ body {
   font-weight: 900;
   font-style: normal;
 }
+
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 1s infinite linear;
+}
+
+/* CSS file */
+.animate-pause {
+  animation-play-state: paused !important;
+}
