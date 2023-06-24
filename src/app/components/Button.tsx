@@ -4,7 +4,7 @@ import { IconType } from "react-icons";
 
 interface Props {
   children?: React.ReactNode;
-  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
   outline?: boolean;
   className?: string;
@@ -30,7 +30,7 @@ const Button: React.FC<Props> = ({
       ${
         outline
           ? " bg-transparent text-black border-[.7px] border-gray-300 "
-          : " bg-[#F2AA3C] border-[#F2AA3C] text-[#050300] "
+          : " bg-ct-primary-500 border-ct-primary-500 text-ct-grey-1000"
       }
       ${
         small

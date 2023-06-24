@@ -6,17 +6,22 @@ interface Props {
 
 const ImageSlug: React.FC<Props> = ({ width }) => {
   return (
-    <div className="cursor-pointer group">
-      <div className=" border-[#D08E29] border-2 rounded-full p-2 w-max border-b-[#fff7ec] animate-spin duration-1000 transition">
-        <div className=" animate-spin-reverse">
-          <Image
-            src="/assets/images/--ct-slug-ex-1.png"
-            className="group-hover:scale-125 transition"
-            alt="image1"
-            height={width || 150}
-            width={width || 150}
-          />
-        </div>
+    <div
+      className="cursor-pointer group relative"
+      style={{ width: `${width || 150}px`, height: `${width || 150}px` }}
+    >
+      <div
+        className="bg-clip-content w-full h-full rounded-full  block animate-spin border-ct-primary-600 border border-b-ct-primary-100"
+        style={{ animationDelay: `${Math.floor(Math.random() * 10) * 100}ms` }}
+      ></div>
+      <div className=" absolute top-0 ">
+        <Image
+          src="/assets/images/--ct-slug-ex-1.png"
+          className="group-hover:scale-125 transition p-1"
+          alt="image1"
+          height={width || 150}
+          width={width || 150}
+        />
       </div>
     </div>
   );

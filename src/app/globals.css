@@ -153,17 +153,14 @@ body {
   font-style: normal;
 }
 
-@keyframes spin-reverse {
-  0% {
-    transform: rotate(0);
-  }
+@keyframes spin {
   100% {
-    transform: rotate(-360deg);
+    transform: rotateZ(360deg);
   }
 }
 
-.animate-spin-reverse {
-  animation: spin-reverse 1s infinite linear;
+.animate-spin {
+  animation: spin 5s linear infinite;
 }
 
 /* CSS file */
