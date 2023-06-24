@@ -55,63 +55,65 @@ const TestimonialBox = () => {
   };
 
   return (
-    <div className=" rounded-3xl border-2 border-ct-secondary-600 border-dashed p-8 flex justify-between">
-      <div className="flex-1">
-        <div className=" w-3/5">
-          {testimonies.map((testimony, index) => {
-            return (
-              <div
-                key={testimony.id}
-                className={`rounded-full  p-4 flex items-center gap-4 cursor-pointer hover:scale-110 duration-200 mt-6 ${
-                  currentTestimonyIndex === index && "bg-ct-secondary-1100"
-                }`}
-                onClick={() => handleClick(index)}
-              >
-                <div className="rounded-full border border-ct-primary-100">
-                  <Image
-                    src="/assets/images/--ct-testimonials-1.png"
-                    alt="testimony"
-                    height={80}
-                    width={80}
-                  />
+    <div className="mx-10">
+      <div className=" rounded-3xl border-2 border-ct-secondary-600 border-dashed p-8 flex justify-between mx-auto max-w-[1480px]">
+        <div className="flex-1">
+          <div className=" w-3/5">
+            {testimonies.map((testimony, index) => {
+              return (
+                <div
+                  key={testimony.id}
+                  className={`rounded-full  p-4 flex items-center gap-4 cursor-pointer hover:scale-110 duration-200 mt-6 ${
+                    currentTestimonyIndex === index && "bg-ct-secondary-1100"
+                  }`}
+                  onClick={() => handleClick(index)}
+                >
+                  <div className="rounded-full border border-ct-primary-100">
+                    <Image
+                      src="/assets/images/--ct-testimonials-1.png"
+                      alt="testimony"
+                      height={80}
+                      width={80}
+                    />
+                  </div>
+                  <div>
+                    <span
+                      className={`text-xl ${
+                        currentTestimonyIndex === index
+                          ? "font-bold text-ct-primary-100 "
+                          : " font-semibold text-ct-grey-600"
+                      }`}
+                    >
+                      {testimony.name}
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  <span
-                    className={`text-xl ${
-                      currentTestimonyIndex === index
-                        ? "font-bold text-ct-primary-100 "
-                        : " font-semibold text-ct-grey-600"
-                    }`}
-                  >
-                    {testimony.name}
-                  </span>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-      <div className=" flex-1">
-        <div className="w-full h-full">
-          <div className="max-w-[595px] duration-200 h-[60%]">
-            <h2 className="text-3xl text-ct-grey-1000 font-bold my-3">
-              {currentTestimony.name}
-            </h2>
-            <p className="text-lg text-ct-grey-600">
-              {currentTestimony.testimony}
-            </p>
+              );
+            })}
           </div>
-          <div className="flex items-center justify-start mt-4">
-            {testimonies.map((_, index) => (
-              <div
-                key={index}
-                className={`w-3 h-3 rounded-full mx-1 ${
-                  currentTestimonyIndex === index
-                    ? "bg-ct-secondary-1100"
-                    : "bg-ct-secondary-500"
-                }`}
-              />
-            ))}
+        </div>
+        <div className=" flex-1">
+          <div className="w-full h-full">
+            <div className="max-w-[595px] duration-200 h-[60%]">
+              <h2 className="text-3xl text-ct-grey-1000 font-bold my-3">
+                {currentTestimony.name}
+              </h2>
+              <p className="text-lg text-ct-grey-600">
+                {currentTestimony.testimony}
+              </p>
+            </div>
+            <div className="flex items-center justify-start mt-4">
+              {testimonies.map((_, index) => (
+                <div
+                  key={index}
+                  className={`w-3 h-3 rounded-full mx-1 ${
+                    currentTestimonyIndex === index
+                      ? "bg-ct-secondary-1100"
+                      : "bg-ct-secondary-500"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

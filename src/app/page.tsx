@@ -10,6 +10,7 @@ import Progress from "./containers/Progress";
 import Resources from "./containers/Resources";
 import Community from "./containers/Community";
 import Testimonials from "./containers/Testimonials";
+import Support from "./containers/Support";
 
 export default function Home() {
   return (
@@ -20,8 +21,11 @@ export default function Home() {
         <Progress />
         <Resources />
       </Container>
-      <Community />
-      <Testimonials />
+      <Community />{" "}
+      <Container>
+        <Testimonials />
+        <Support />
+      </Container>
     </>
   );
 }

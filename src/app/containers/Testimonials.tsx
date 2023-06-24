@@ -22,8 +22,8 @@ const Testimonials = () => {
             </p>
           </div>
         </div>
-        <TestimonialBox />
       </Container>
+      <TestimonialBox />
     </div>
   );
 };
