@@ -5,7 +5,7 @@ import Container from "../components/Container";
 
 const Community = () => {
   return (
-    <div className="flex justify-between max-w-[1980px] mx-auto my-12 relative overflow-hidden">
+    <div className="flex justify-between max-w-[1980px] mx-auto my-12 relative overflow-x-hidden">
       <div className="relative">
         <Image
           src="/assets/images/--ct-community.png"
