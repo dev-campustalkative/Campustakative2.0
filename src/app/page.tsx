@@ -7,6 +7,7 @@ import ImageSlug from "./components/ImageSlug";
 import Hero from "./containers/Hero";
 import Collaboration from "./containers/Collaboration";
 import Progress from "./containers/Progress";
+import Resources from "./containers/Resources";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Collaboration />
       <Progress />
+      <Resources />
     </Container>
   );
 }

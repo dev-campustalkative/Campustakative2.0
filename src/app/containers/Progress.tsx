@@ -12,7 +12,7 @@ const Progress = () => {
             numbers within the community is growing
           </p>
         </div>
-        <div className="max-w-[65%]">
+        <div className="flex items-end gap-8">
           <div>
             <div className="flex gap-6 flex-row my-6">
               <div className="flex items-center justify-center flex-1 bg-ct-secondary-1100 rounded-full ">
@@ -45,9 +45,11 @@ const Progress = () => {
               </div>
             </div>
           </div>
-          <div>
-            <h2>4782</h2>
-            <span>Members and counting</span>
+          <div className="my-6">
+            <h2 className="text-7xl text-ct-grey-1000 font-bold ">4782</h2>
+            <span className="text-base text-ct-primary-800">
+              Members and counting
+            </span>
           </div>
         </div>
       </div>
