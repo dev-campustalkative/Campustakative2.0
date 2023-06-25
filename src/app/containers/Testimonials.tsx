@@ -4,7 +4,7 @@ import Container from "../components/Container";
 
 const Testimonials = () => {
   return (
-    <div className="py-8">
+    <div className="py-8 my-12">
       <Container>
         <div className="flex flex-col justify-center items-center">
           <div className="bg-ct-primary-1000 p-2 text-center my-8">
