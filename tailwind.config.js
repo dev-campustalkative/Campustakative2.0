@@ -6,6 +6,18 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: { max: "639px" },
+      md: { max: "820px" },
+      lg: { max: "1024px" },
+      xl: { max: "1279px" },
+      "2xl": { max: "1535px" },
+      msm: { min: "639px" },
+      mmd: { min: "820px" },
+      mlg: { min: "1024px" },
+      mxl: { min: "1279px" },
+      m2xl: { min: "1535px" },
+    },
     extend: {
       fontFamily: {
         sora: ["Sora", "sans-serif"],
@@ -80,5 +92,20 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities(
+        {
+          ".no-scrollbar::-webkit-scrollbar": {
+            display: "none",
+          },
+          ".no-scrollbar": {
+            "-ms-overflow-style": "none",
+            "scrollbar-width": "none",
+          },
+        },
+        ["responsive"]
+      );
+    },
+  ],
 };

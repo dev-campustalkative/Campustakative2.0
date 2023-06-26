@@ -9,7 +9,7 @@ const Logo = () => {
     <Image
       onClick={() => router.push("/")}
       alt="CT logo"
-      className=" w-[560px] md:w-[412px] md:block cursor-pointer"
+      className=" w-[560px] mmd:w-[412px] mmd:block cursor-pointer"
       height={100}
       width={100}
       src={"/assets/images/--ct-logo.png"}

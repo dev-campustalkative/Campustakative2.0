@@ -9,6 +9,7 @@ import Community from "./containers/Community";
 import Testimonials from "./containers/Testimonials";
 import Support from "./containers/Support";
 import Contact from "./containers/Contact";
+import Sponsors from "./components/Sponsors";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Container>
         <Hero />
         <Collaboration />
+        <Sponsors />
         <Progress />
         <Resources />
       </Container>

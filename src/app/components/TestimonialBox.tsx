@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const testimonies = [
   {
@@ -37,6 +37,7 @@ const testimonies = [
 ];
 const TestimonialBox = () => {
   const [currentTestimonyIndex, setCurrentTestimonyIndex] = useState(0);
+  const testimoniesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -48,6 +49,37 @@ const TestimonialBox = () => {
     return () => clearInterval(timer);
   }, []);
 
+  useEffect(() => {
+    const scrollContainer = testimoniesRef.current;
+    const activeElement = scrollContainer?.querySelector(
+      ".bg-ct-secondary-1100"
+    );
+
+    if (scrollContainer && activeElement instanceof HTMLDivElement) {
+      const containerWidth = scrollContainer.offsetWidth;
+      const activeElementWidth = activeElement.offsetWidth;
+      const activeElementLeft = activeElement.offsetLeft;
+
+      if (
+        activeElementLeft < scrollContainer.scrollLeft ||
+        currentTestimonyIndex === 0
+      ) {
+        scrollContainer.scrollTo({
+          behavior: "smooth",
+          left: 0,
+        });
+      } else if (
+        activeElementLeft + activeElementWidth >
+        scrollContainer.scrollLeft + containerWidth
+      ) {
+        scrollContainer.scrollTo({
+          behavior: "smooth",
+          left: activeElementLeft + activeElementWidth - containerWidth,
+        });
+      }
+    }
+  }, [currentTestimonyIndex]);
+
   const currentTestimony = testimonies[currentTestimonyIndex];
 
   const handleClick = (index: number) => {
@@ -55,29 +87,33 @@ const TestimonialBox = () => {
   };
 
   return (
-    <div className=" rounded-3xl border-2 border-ct-secondary-600 border-dashed p-8 flex justify-between mx-auto max-w-[1480px]">
+    <div className=" rounded-3xl border-2 border-ct-secondary-600 border-dashed p-8 flex justify-between mx-auto max-w-[1480px] sm:flex-col sm:p-6 ">
       <div className="flex-1">
-        <div className=" w-3/5">
+        <div
+          ref={testimoniesRef}
+          className=" w-3/5 sm:w-full sm:flex sm:overflow-x-scroll sm:no-scrollbar "
+        >
           {testimonies.map((testimony, index) => {
             return (
               <div
                 key={testimony.id}
-                className={`rounded-full  p-4 flex items-center gap-4 cursor-pointer hover:scale-110 duration-200 mt-6 ${
+                className={`rounded-full  p-4 flex items-center gap-4 cursor-pointer hover:scale-110 duration-200 mt-6 sm:mr-2  ${
                   currentTestimonyIndex === index && "bg-ct-secondary-1100"
                 }`}
                 onClick={() => handleClick(index)}
               >
-                <div className="rounded-full border border-ct-primary-100">
+                <div className="rounded-full border border-ct-primary-100 sm:w-10">
                   <Image
                     src="/assets/images/--ct-testimonials-1.png"
                     alt="testimony"
+                    className="sm:w-10"
                     height={80}
                     width={80}
                   />
                 </div>
-                <div>
+                <div className="">
                   <span
-                    className={`text-xl ${
+                    className={`text-xl md:whitespace-nowrap ${
                       currentTestimonyIndex === index
                         ? "font-bold text-ct-primary-100 "
                         : " font-semibold text-ct-grey-600"

@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 const Menu = () => {
   const router = useRouter();
   return (
-    <div className=" w-full hidden md:block">
+    <div className=" w-full hidden mmd:block">
       <div className="flex items-center justify-around">
         <p
           onClick={() => router.push("/about")}

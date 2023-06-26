@@ -29,10 +29,10 @@ const Join = () => {
   };
   return (
     <div className="w-full  items-center justify-end flex">
-      <div className="hidden md:block">
+      <div className="hidden mmd:block">
         <Button onClick={() => toggleNav}>Join community</Button>
       </div>
-      <div className="block md:hidden">
+      <div className="block mmd:hidden">
         {!navShow && (
           <Menu
             size="24"
