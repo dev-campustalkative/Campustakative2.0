@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../components/Button";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import ImageSlug from "../components/ImageSlug";
-import Container from "../components/Container";
+
 
 const Hero = () => {
   return (
