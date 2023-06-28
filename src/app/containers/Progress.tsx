@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Metric from "../components/Metric";
 
 const Progress = () => {
   return (
@@ -47,12 +48,7 @@ const Progress = () => {
               </div>
             </div>
           </div>
-          <div className="my-6 sm:my-0">
-            <h2 className="text-7xl text-ct-grey-1000 font-bold ">4782</h2>
-            <span className="text-base text-ct-primary-800">
-              Members and counting
-            </span>
-          </div>
+          <Metric num={4678}>Members and Counting</Metric>
         </div>
       </div>
       <div className="relative">
