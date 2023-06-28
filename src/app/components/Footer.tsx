@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import Contact from "../containers/Contact";
 import Image from "next/image";
 import Container from "./Container";

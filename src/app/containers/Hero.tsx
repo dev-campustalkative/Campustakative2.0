@@ -1,8 +1,8 @@
-import React from "react";
+"use client";
+
 import Button from "../components/Button";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import ImageSlug from "../components/ImageSlug";
-
 
 const Hero = () => {
   return (

@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import TestimonialBox from "../components/TestimonialBox";
 import Container from "../components/Container";
 

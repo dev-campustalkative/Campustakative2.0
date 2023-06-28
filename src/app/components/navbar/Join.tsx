@@ -9,12 +9,6 @@ import { links } from "@/app/data/links";
 
 const Join = () => {
   const [navShow, setNavShow] = useState(false);
-  const headerNavLinks = [
-    { href: "/blog", title: "Blog" },
-    { href: "/tags", title: "Tags" },
-    { href: "/projects", title: "Projects" },
-    { href: "/about", title: "About" },
-  ];
 
   const toggleNav = () => {
     setNavShow((status) => {

@@ -1,5 +1,6 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
 import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
 import { FaLinkedin, FaTiktok } from "react-icons/fa";
 
