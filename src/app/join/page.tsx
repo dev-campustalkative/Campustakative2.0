@@ -1,9 +1,14 @@
-import React from 'react'
+"use client";
+
+import Container from "../components/Container";
+import JoinHeader from "../containers/JoinHeader";
 
 const Join = () => {
   return (
-    <div>page</div>
-  )
-}
+    <Container>
+      <JoinHeader />
+    </Container>
+  );
+};
 
-export default Join
+export default Join;
