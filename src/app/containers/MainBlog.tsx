@@ -1,10 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Date from "../components/Date";
 import Button from "../components/Button";
-import Image from "next/image";
 
-const MainEvent = () => {
+const MainBlog = () => {
   return (
     <div className="pt-36 md:py-12 flex gap-6 md:flex-col">
       <div className="w-full">
@@ -52,4 +52,4 @@ const MainEvent = () => {
   );
 };
 
-export default MainEvent;
+export default MainBlog;
