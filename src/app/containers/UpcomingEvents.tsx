@@ -13,7 +13,7 @@ const UpcomingEvents = () => {
         </h2>
         <p className="text-ct-grey-600 text-lg my-4 max-w-[788px]">
           At Campustalkative, we understand the importance of building and
-          maintaining a strong community. That's why we are dedicated to
+          maintaining a strong community. That&lsquo;s why we are dedicated to
           providing the best resources and op
         </p>
       </div>

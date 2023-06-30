@@ -23,7 +23,7 @@ const BlogCard = () => {
           Your Guide To Video Interviews
         </h1>
         <p className="text-ct-grey-600 text-lg my-2">
-          Let's find out how to knock a video interview out of the park.
+          Let&lsquo;s find out how to knock a video interview out of the park.
         </p>
       </div>
     </div>
