@@ -1,5 +1,7 @@
 "use client";
 
+import { links } from "@/app/data/links";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const Menu = () => {
@@ -7,27 +9,15 @@ const Menu = () => {
   return (
     <div className=" w-full hidden mmd:block">
       <div className="flex items-center justify-around">
-        <p
-          onClick={() => router.push("/about")}
-          className="capitalize  text-sm cursor-pointer px-3 hover:text-orange-400 transition"
-        >
-          about
-        </p>
-        <p className="capitalize  text-sm cursor-pointer px-3 hover:text-orange-400 transition">
-          product
-        </p>
-        <p className="capitalize  text-sm cursor-pointer px-3 hover:text-orange-400 transition">
-          resources
-        </p>
-        <p className="capitalize  text-sm cursor-pointer px-3 hover:text-orange-400 transition">
-          event
-        </p>
-        <p className="capitalize  text-sm cursor-pointer px-3 hover:text-orange-400 transition">
-          blog
-        </p>
-        <p className="capitalize  text-sm cursor-pointer px-3 hover:text-orange-400 transition">
-          contact
-        </p>
+        {links.map((link) => (
+          <Link
+            key={link.title}
+            href={link.href}
+            className="capitalize  text-sm cursor-pointer px-3 hover:text-orange-400 transition"
+          >
+            {link.title}
+          </Link>
+        ))}
       </div>
     </div>
   );
