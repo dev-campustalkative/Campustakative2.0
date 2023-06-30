@@ -36,7 +36,7 @@ const Join = () => {
         )}
 
         <div
-          className={`fixed top-0 left-0 z-10 h-full w-full transform bg-orange-100 bg-opacity-70 duration-300 ease-in-out dark:bg-gray-800 ${
+          className={`fixed top-0 left-0 z-10 h-full w-full transform bg-orange-100 bg-opacity-80 duration-300 ease-in-out dark:bg-gray-800 ${
             navShow ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -60,10 +60,8 @@ const Join = () => {
                   </Link>
                 </div>
               ))}
-              <div>
-                <Button onClick={() => {}} large>
-                  Join Community
-                </Button>
+              <div className="px-12">
+                <Button onClick={() => {}}>Join Community</Button>
               </div>
             </div>
           </nav>

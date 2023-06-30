@@ -5,7 +5,7 @@ import Date from "./Date";
 
 const BlogCard = () => {
   return (
-    <div className="flex flex-col items-start gap-5">
+    <div className="flex flex-col items-start gap-5 cursor-pointer">
       <div className="rounded-[32px] w-full">
         <Image
           src="/assets/images/--ct-products-1.png"

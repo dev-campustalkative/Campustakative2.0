@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Button from "../components/Button";
 
 const Support = () => {
   return (
@@ -60,10 +61,8 @@ const Support = () => {
           </p>
         </div>
         <div className="flex gap-6 mt-6">
-          <div className="rounded-full w-full flex items-center justify-center bg-ct-primary-500 md:p-6">
-            <span className="text-2xl font-bold text-ct-grey-1000">
-              Donate now
-            </span>
+          <div className="rounded-full w-full flex items-center justify-center overflow-hidden">
+            <Button className="h-full">Donate Now</Button>
           </div>
           <div className="rounded-full md:w-0">
             <Image
