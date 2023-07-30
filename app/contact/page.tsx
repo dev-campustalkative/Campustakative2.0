@@ -1,7 +1,7 @@
 "use client";
 
-import Container from "@/components/Container";
-import Divider from "@/components/Divider";
+import Container from "@/components/container";
+import Divider from "@/components/civider";
 import ContactHeader from "@/containers/contact-header";
 import FAQ from "@/containers/faq";
 
