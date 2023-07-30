@@ -1,7 +1,7 @@
 "use client";
 
 import Container from "@/components/Container";
-import Divider from "../components/Divider";
+import Divider from "@/components/Divider";
 import BlogHeader from "../../containers/BlogHeader";
 import MainBlog from "../../containers/MainBlog";
 import MoreBlogs from "../../containers/MoreBlogs";
