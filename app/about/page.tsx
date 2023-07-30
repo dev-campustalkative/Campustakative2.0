@@ -3,7 +3,7 @@
 import Container from "@/components/container";
 import AboutHeader from "@/containers/about-header";
 import Journey from "@/containers/journey";
-import Mission from "@/containers/Mission";
+import Mission from "@/containers/missions";
 import Team from "@/containers/Team";
 
 const About = () => {
