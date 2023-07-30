@@ -2,7 +2,7 @@
 
 import Container from "@/components/container";
 import AboutHeader from "@/containers/about-header";
-import Journey from "@/containers/Journey";
+import Journey from "@/containers/journey";
 import Mission from "@/containers/Mission";
 import Team from "@/containers/Team";
 
