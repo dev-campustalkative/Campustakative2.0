@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import Button from "../Button";
+
 import { useState } from "react";
+import { links } from "@/data/links";
 import { Menu } from "iconsax-react";
 import { AiOutlineClose } from "react-icons/ai";
 
