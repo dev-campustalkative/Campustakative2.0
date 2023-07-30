@@ -8,8 +8,7 @@ import Resources from "@/containers/Resources";
 import Community from "@/containers/community";
 import Testimonials from "@/containers/testimonials";
 import Support from "@/containers/support";
-import Contact from "../containers/Contact";
-import Sponsors from "./components/Sponsors";
+import Sponsors from "@/components/sponsors";
 
 export default function Home() {
   return (
