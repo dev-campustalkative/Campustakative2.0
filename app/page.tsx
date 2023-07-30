@@ -1,13 +1,13 @@
 "use client";
 
-import Container from "./components/Container";
-import Hero from "../containers/hero";
-import Collaboration from "../containers/collaboration";
+import Container from "@/components/container";
+import Hero from "@/containers/hero";
+import Collaboration from "@/containers/collaboration";
 import Progress from "../containers/progress";
 import Resources from "../containers/Resources";
 import Community from "../containers/community";
-import Testimonials from "../containers/Testimonials";
-import Support from "../containers/supports";
+import Testimonials from "../containers/testimonials";
+import Support from "../containers/support";
 import Contact from "../containers/Contact";
 import Sponsors from "./components/Sponsors";
 
