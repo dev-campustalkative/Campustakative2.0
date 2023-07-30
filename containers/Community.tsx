@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Button from "../components/Button";
-import Container from "../components/Container";
+import Button from "@/components/button";
 
 const Community = () => {
   return (

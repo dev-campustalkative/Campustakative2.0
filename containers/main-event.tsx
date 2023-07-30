@@ -1,8 +1,8 @@
 "use client";
 
-import Date from "../components/Date";
-import Button from "../components/Button";
 import Image from "next/image";
+import Date from "@/components/date";
+import Button from "@/components/button";
 
 const MainEvent = () => {
   return (

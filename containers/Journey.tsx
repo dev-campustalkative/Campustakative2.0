@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Metric from "../components/Metric";
+import Metric from "@/components/metric";
 
 const Journey = () => {
   return (

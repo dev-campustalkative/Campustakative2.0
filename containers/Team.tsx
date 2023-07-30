@@ -1,6 +1,6 @@
 "use client";
 
-import ImageSlug from "../components/ImageSlug";
+import ImageSlug from "@/components/image-slug";
 
 const Team = () => {
   return (

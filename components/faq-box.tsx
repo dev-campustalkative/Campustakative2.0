@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
+import { useState } from "react";
 import { BsArrowDown, BsArrowUp } from "react-icons/bs";
-import { faqs } from "../data/faqs";
+import { faqs } from "@/data/faqs";
 
 const FAQBox = () => {
   const [openIndex, setOpenIndex] = useState(0);

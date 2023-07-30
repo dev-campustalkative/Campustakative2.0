@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import Button from "../Button";
-
+import Button from "@/components/button";
 import { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 import { links } from "@/data/links";
 import { Menu } from "iconsax-react";
-import { AiOutlineClose } from "react-icons/ai";
+
 
 
 

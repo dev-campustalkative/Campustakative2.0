@@ -21,5 +21,5 @@ def rename_files_to_lowercase(directory):
             print(f"Renamed: {filename} -> {new_filename}")
 
 if __name__ == "__main__":
-    directory_path = "/Users/macbook/new/mw/campustalkative/components"
+    directory_path = "/Users/macbook/new/mw/campustalkative/containers"
     rename_files_to_lowercase(directory_path)

@@ -1,7 +1,7 @@
 "use client";
 
-import Container from "./Container";
 import Image from "next/image";
+import Container from "@/components/container";
 
 const Sponsors = () => {
   return (

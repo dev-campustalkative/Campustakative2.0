@@ -1,8 +1,8 @@
 "use client";
 
-import Contact from "../containers/Contact";
 import Image from "next/image";
-import Container from "./Container";
+import Contact from "@/containers/Contact";
+import Container from "@/components/container";
 
 const Footer = () => {
   return (

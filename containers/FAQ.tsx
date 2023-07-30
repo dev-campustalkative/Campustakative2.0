@@ -1,6 +1,6 @@
 "use client";
 
-import FAQBox from "../components/FAQBox";
+import FAQBox from "@/components/faq-box";
 
 const FAQ = () => {
   return (

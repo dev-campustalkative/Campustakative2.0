@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
-import JoinImages from "../components/JoinImages";
-import Button from "../components/SecondaryButton";
+import JoinImages from "@/components/join-images";
+import Button from "@/components/secondary-button";
 import { RiWhatsappFill, RiTelegramFill } from "react-icons/ri";
 
 const JoinHeader = () => {

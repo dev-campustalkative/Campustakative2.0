@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Date from "./Date";
+import Date from "@/components/date";
 
 const BlogCard = () => {
   return (

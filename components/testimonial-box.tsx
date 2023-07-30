@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { testimonies } from "../data/testimonies";
+import { useEffect, useRef, useState } from "react";
+import { testimonies } from "@/data/testimonies";
 
 
 const TestimonialBox = () => {

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import MissionCard from "../components/MissionCard";
+import MissionCard from "@/components/mission-card";
 
 const Mission = () => {
   return (

@@ -1,6 +1,7 @@
-import React from "react";
-import Button from "../components/Button";
+"use client";
+
 import Image from "next/image";
+import Button from "@/components/button";
 
 const ProductsBody = () => {
   return (
