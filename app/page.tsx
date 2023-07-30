@@ -6,8 +6,8 @@ import Collaboration from "@/containers/collaboration";
 import Progress from "@/containers/progress";
 import Resources from "@/containers/Resources";
 import Community from "@/containers/community";
-import Testimonials from "../containers/testimonials";
-import Support from "../containers/support";
+import Testimonials from "@/containers/testimonials";
+import Support from "@/containers/support";
 import Contact from "../containers/Contact";
 import Sponsors from "./components/Sponsors";
 
