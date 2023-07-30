@@ -3,8 +3,8 @@
 import Container from "@/components/container";
 import AboutHeader from "@/containers/about-header";
 import Journey from "@/containers/journey";
-import Mission from "@/containers/missions";
-import Team from "@/containers/Team";
+import Mission from "@/containers/mission";
+import Team from "@/containers/teams";
 
 const About = () => {
   return (
