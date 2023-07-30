@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Menu } from "iconsax-react";
 import { AiOutlineClose } from "react-icons/ai";
 
-import { links } from "@/data/links";
+
 
 const Join = () => {
   const [navShow, setNavShow] = useState(false);
