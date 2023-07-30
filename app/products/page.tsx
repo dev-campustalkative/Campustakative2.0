@@ -1,7 +1,7 @@
 "use client";
 
 import Container from "@/components/Container";
-import ProductsBody from "@/containers/ProductsBody";
+import ProductsBody from "@/containers/products-body";
 import ProductsHeader from "@/containers/ProductsHeader";
 import Support from "@/containers/Support";
 
