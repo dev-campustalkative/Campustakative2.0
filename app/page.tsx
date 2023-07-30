@@ -1,8 +1,8 @@
 "use client";
 
 import Container from "./components/Container";
-import Hero from "../containers/Hero";
-import Collaboration from "../containers/collaborations";
+import Hero from "../containers/heros";
+import Collaboration from "../containers/collaboration";
 import Progress from "../containers/Progress";
 import Resources from "../containers/Resources";
 import Community from "../containers/community";
