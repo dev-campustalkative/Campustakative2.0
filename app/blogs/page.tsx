@@ -2,7 +2,7 @@
 
 import Container from "@/components/Container";
 import Divider from "@/components/Divider";
-import BlogHeader from "@/containers/BlogHeader";
+import BlogHeader from "@/containers/blog-header";
 import MainBlog from "@/containers/MainBlog";
 import MoreBlogs from "@/containers/MoreBlogs";
 
