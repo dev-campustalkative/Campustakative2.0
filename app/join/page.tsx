@@ -1,7 +1,7 @@
 "use client";
 
-import Container from "@/components/Container";
-import JoinHeader from "@/containers/JoinHeader";
+import Container from "@/components/container";
+import JoinHeader from "@/containers/join-header";
 
 const Join = () => {
   return (
