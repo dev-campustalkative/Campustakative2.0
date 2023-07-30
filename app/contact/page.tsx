@@ -2,7 +2,7 @@
 
 import Container from "@/components/Container";
 import Divider from "@/components/Divider";
-import ContactHeader from "@/containers/ContactHeader";
+import ContactHeader from "@/containers/contact-header";
 import FAQ from "@/containers/FAQ";
 
 const page = () => {
