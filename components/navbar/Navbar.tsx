@@ -2,7 +2,7 @@
 
 import Container from "../Container";
 import Join from "./join";
-import Logo from "./Logo";
+import Logo from "./logo";
 import Menu from "./Menu";
 
 const Navbar = () => {
