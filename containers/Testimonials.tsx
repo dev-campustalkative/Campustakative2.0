@@ -1,6 +1,6 @@
 "use client";
 
-import TestimonialBox from "@/components/TestimonialBox";
+import TestimonialBox from "@/components/testimonial-box";
 import Container from "@/components/container";
 
 const Testimonials = () => {
