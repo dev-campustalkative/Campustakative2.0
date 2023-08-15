@@ -7,7 +7,7 @@ import Button from '@/components/button';
 const UpcomingEvents = () => {
   return (
     <div className="relative">
-      <div className="absolute w-full mx-auto h-full shadow-2xl z-50 bg-background/80 backdrop-blur-sm p-20">
+      <div className="absolute w-full mx-auto h-full shadow-2xl z-50 bg-background/80 backdrop-blur-sm p-20 flex items-center justify-center">
         Coming Soon
       </div>
 
