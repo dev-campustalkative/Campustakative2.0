@@ -11,11 +11,11 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 
-const ComingSoonModal = ({children}) => {
+const ComingSoonModal = ({children, }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button outline>Edit Profile</Button>
+        {children}
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
