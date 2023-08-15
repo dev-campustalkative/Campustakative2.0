@@ -11,7 +11,7 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 
-const ComingSoonModal = () => {
+const ComingSoonModal = ({children}) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
