@@ -15,7 +15,7 @@ const ComingSoonModal = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">Edit Profile</Button>
+        <Button outline>Edit Profile</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
@@ -26,7 +26,7 @@ const ComingSoonModal = () => {
         </DialogHeader>
         <div className="grid gap-4 py-4"></div>
         <DialogFooter>
-          <Button type="submit">Save changes</Button>
+          <Button type="submit">Close</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
