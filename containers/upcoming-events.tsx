@@ -4,6 +4,7 @@ import Image from 'next/image';
 import EventsCard from '@/components/events-card';
 import Button from '@/components/button';
 import { Card } from '@/components/ui/card';
+import ComingSoonModal from '@/components/coming-soon-modal';
 
 const UpcomingEvents = () => {
   return (
