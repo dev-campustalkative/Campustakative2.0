@@ -51,7 +51,6 @@ const UpcomingEvents = () => {
             >
               <Button hoverText="Coming soon!">See more events</Button>
             </ComingSoonModal>
-            <Button>See more events</Button>
           </div>
         </div>
       </div>
