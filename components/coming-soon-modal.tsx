@@ -21,7 +21,7 @@ const ComingSoonModal = () => {
         <DialogHeader>
           <DialogTitle>Edit profile</DialogTitle>
           <DialogDescription>
-            Make changes to your profile here. Click save when you're done.
+            This feature is coming soon Please hold on.
           </DialogDescription>
         </DialogHeader>
         <DialogFooter>
