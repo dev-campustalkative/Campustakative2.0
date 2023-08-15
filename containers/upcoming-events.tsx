@@ -48,7 +48,7 @@ const UpcomingEvents = () => {
               title="Coming soon: Make a Difference with Your Donation"
               text="We're thrilled to announce that our new donate feature is on its way! Soon, you'll be able to support our noble cause by making a donation. Every contribution will help us take important steps toward our mission. Whether it's helping the less fortunate, protecting the environment, or promoting social justice, your donation will play a crucial role in creating positive change. Stay tuned for updates on how you can be a part of this transformative journey."
             >
-              <Button hoverText="Coming soon!">View deals</Button>
+              <Button hoverText="Coming soon!">See more events</Button>
             </ComingSoonModal>
             <Button>See more events</Button>
           </div>
