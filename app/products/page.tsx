@@ -9,7 +9,9 @@ import Support from '@/containers/support';
 const Products = () => {
   return (
     <>
-      <ComingSoonBanner >
+      <ComingSoonBanner>
+        We are launchong our product soon watch out
+      </ComingSoonBanner>
       <Container>
         <ProductsHeader />
         <ProductsBody />
