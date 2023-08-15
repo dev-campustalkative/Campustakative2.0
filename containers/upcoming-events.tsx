@@ -9,7 +9,7 @@ const UpcomingEvents = () => {
   return (
     <div className="relative">
       <div className="absolute w-full mx-auto h-full shadow-2xl z-50 bg-background/80 backdrop-blur-sm p-20 flex items-center justify-center">
-        <Card>Coming Soon</Card>
+        <Card className="p-20 text-2xl font-bold font-sora">Coming Soon</Card>
       </div>
 
       <div className="py-12 md:py-8">
@@ -44,6 +44,12 @@ const UpcomingEvents = () => {
         </div>
         <div className="my-12 mxl:hidden w-max mmd:w-full mmd:flex mmd:items-end mmd:justify-end">
           <div>
+            <ComingSoonModal
+              title="Coming soon: Make a Difference with Your Donation"
+              text="We're thrilled to announce that our new donate feature is on its way! Soon, you'll be able to support our noble cause by making a donation. Every contribution will help us take important steps toward our mission. Whether it's helping the less fortunate, protecting the environment, or promoting social justice, your donation will play a crucial role in creating positive change. Stay tuned for updates on how you can be a part of this transformative journey."
+            >
+              <Button hoverText="Coming soon!">View deals</Button>
+            </ComingSoonModal>
             <Button>See more events</Button>
           </div>
         </div>
