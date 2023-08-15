@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
-import { FaLinkedin, FaTiktok } from "react-icons/fa";
+import Image from 'next/image';
+import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
+import { FaLinkedin, FaTiktok } from 'react-icons/fa';
 
 const Contact = () => {
   return (
     <div className="max-w-[1580px] mx-auto">
       <div className="-mb-10  md:my-4 md:block ">
         <h1 className="text-ct-grey-1000 font-bold text-5xl font-sora md:text-2xl sm:text-xl">
-          Say hello at{" "}
+          Say hello at{' '}
           <span className="text-ct-primary-500">talk@campustalktive.net</span>
         </h1>
       </div>

@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Button from "@/components/button";
+import Image from 'next/image';
+import Button from '@/components/button';
 
 const Support = () => {
   return (
@@ -21,9 +21,9 @@ const Support = () => {
             className=" w-full rounded-full"
             style={{
               backgroundImage: "url('/assets/images/--ct-slug-ex-1.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
             }}
           ></div>
         </div>
@@ -41,9 +41,9 @@ const Support = () => {
             className=" w-full rounded-full"
             style={{
               backgroundImage: "url('/assets/images/--ct-slug-ex-1.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
             }}
           ></div>
         </div>

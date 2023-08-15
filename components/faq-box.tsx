@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { useState } from "react";
-import { BsArrowDown, BsArrowUp } from "react-icons/bs";
-import { faqs } from "@/data/faqs";
+import Image from 'next/image';
+import { useState } from 'react';
+import { BsArrowDown, BsArrowUp } from 'react-icons/bs';
+import { faqs } from '@/data/faqs';
 
 const FAQBox = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -18,7 +18,7 @@ const FAQBox = () => {
         <div key={index}>
           <div
             className={`py-10 px-8 duration-300 transition-all ${
-              openIndex === index && "bg-ct-primary-200"
+              openIndex === index && 'bg-ct-primary-200'
             }`}
           >
             <div>

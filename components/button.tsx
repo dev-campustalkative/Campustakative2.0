@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { IconType } from "react-icons";
+import { IconType } from 'react-icons';
 
 interface Props {
   children?: React.ReactNode;
@@ -29,15 +29,15 @@ const Button: React.FC<Props> = ({
       className={`relative flex items-center justify-center gap-3 disabled:opacity-70 disabled:cursor-not-allowed rounded-md hover:opacity-80 transition w-full
       ${
         outline
-          ? " bg-transparent text-black border-[.7px] border-gray-300 "
-          : " bg-ct-primary-500 border-ct-primary-500 text-ct-grey-1000"
+          ? ' bg-transparent text-black border-[.7px] border-gray-300 '
+          : ' bg-ct-primary-500 border-ct-primary-500 text-ct-grey-1000'
       }
       ${
         small
-          ? " py-1 text-sm font-light border"
+          ? ' py-1 text-sm font-light border'
           : large
-          ? " text-3xl font-semibold p-4"
-          : "py-3 px-6 font-semibold text-base border-2 "
+          ? ' text-3xl font-semibold p-4'
+          : 'py-3 px-6 font-semibold text-base border-2 '
       } 
       
       ${className}`}

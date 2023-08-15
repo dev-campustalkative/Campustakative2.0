@@ -1,10 +1,8 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { links } from "@/data/links";
-
-
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { links } from '@/data/links';
 
 const Menu = () => {
   const router = useRouter();

@@ -1,4 +1,4 @@
-"useClient";
+'useClient';
 
 interface Props {
   children: React.ReactNode;

@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Metric from "@/components/metric";
+import Image from 'next/image';
+import Metric from '@/components/metric';
 
 const Progress = () => {
   return (

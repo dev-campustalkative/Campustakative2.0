@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Container from "@/components/container";
-import Join from "@/components/navbar/join";
-import Logo from "@/components/navbar/logo";
-import Menu from "@/components/navbar/menu";
+import Container from '@/components/container';
+import Join from '@/components/navbar/join';
+import Logo from '@/components/navbar/logo';
+import Menu from '@/components/navbar/menu';
 
 const Navbar = () => {
   return (

@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 const Store = () => {
   return <div>page</div>;

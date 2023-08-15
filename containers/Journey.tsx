@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Metric from "@/components/metric";
+import Image from 'next/image';
+import Metric from '@/components/metric';
 
 const Journey = () => {
   return (
@@ -33,8 +33,8 @@ const Journey = () => {
       </div>
       <div
         style={{
-          backgroundImage: "url(/assets/icons/--ct-journey-slug.svg)",
-          backgroundRepeat: "no-repeat",
+          backgroundImage: 'url(/assets/icons/--ct-journey-slug.svg)',
+          backgroundRepeat: 'no-repeat',
         }}
         className="mmd:w-[80%] mmd:h-[400px] relative mmd:mt-[-10%] mb-[10%]  bg-none-md md:flex justify-between items-center gap-4 md:my-8"
       >

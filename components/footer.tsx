@@ -1,8 +1,9 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Contact from "@/containers/Contact";
-import Container from "@/components/container";
+import Image from 'next/image';
+import Contact from '@/containers/contact';
+import Container from '@/components/container';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -29,12 +30,18 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex justify-center items-center gap-4 my-4">
-            <span className="w-full flex items-end justify-end capitalize  text-sm cursor-pointer hover:text-orange-400 transition">
+            <Link
+              href="/terms-of-use"
+              className="w-full flex items-end justify-end capitalize  text-sm cursor-pointer hover:text-orange-400 transition"
+            >
               TERMS OF USE
-            </span>
-            <span className="w-full capitalize  text-sm cursor-pointer hover:text-orange-400 transition">
+            </Link>
+            <Link
+              href="/privacy-policy"
+              className="w-full capitalize  text-sm cursor-pointer hover:text-orange-400 transition"
+            >
               PRIVACY POLICY
-            </span>
+            </Link>
           </div>
         </div>
       </Container>

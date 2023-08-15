@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
 const EventsCard = () => {
   return (
     <div
       style={{
         backgroundImage: "url('/assets/images/--ct-products-1.png')",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
       }}
       className="h-[330px] rounded-[32px] overflow-hidden flex items-end group transition duration-300"
     >

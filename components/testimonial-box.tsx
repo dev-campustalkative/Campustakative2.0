@@ -1,9 +1,8 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
-import { testimonies } from "@/data/testimonies";
-
+import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
+import { testimonies } from '@/data/testimonies';
 
 const TestimonialBox = () => {
   const [currentTestimonyIndex, setCurrentTestimonyIndex] = useState(0);
@@ -12,7 +11,7 @@ const TestimonialBox = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTestimonyIndex((prevIndex) =>
-        prevIndex === testimonies.length - 1 ? 0 : prevIndex + 1
+        prevIndex === testimonies.length - 1 ? 0 : prevIndex + 1,
       );
     }, 5000);
 
@@ -22,7 +21,7 @@ const TestimonialBox = () => {
   useEffect(() => {
     const scrollContainer = testimoniesRef.current;
     const activeElement = scrollContainer?.querySelector(
-      ".bg-ct-secondary-1100"
+      '.bg-ct-secondary-1100',
     );
 
     if (scrollContainer && activeElement instanceof HTMLDivElement) {
@@ -35,7 +34,7 @@ const TestimonialBox = () => {
         currentTestimonyIndex === 0
       ) {
         scrollContainer.scrollTo({
-          behavior: "smooth",
+          behavior: 'smooth',
           left: 0,
         });
       } else if (
@@ -43,7 +42,7 @@ const TestimonialBox = () => {
         scrollContainer.scrollLeft + containerWidth
       ) {
         scrollContainer.scrollTo({
-          behavior: "smooth",
+          behavior: 'smooth',
           left: activeElementLeft + activeElementWidth - containerWidth,
         });
       }
@@ -68,7 +67,7 @@ const TestimonialBox = () => {
               <div
                 key={testimony.id}
                 className={`rounded-full  p-4 flex items-center gap-4 cursor-pointer hover:scale-110 duration-200 mt-6 sm:mr-2  ${
-                  currentTestimonyIndex === index && "bg-ct-secondary-1100"
+                  currentTestimonyIndex === index && 'bg-ct-secondary-1100'
                 }`}
                 onClick={() => handleClick(index)}
               >
@@ -85,8 +84,8 @@ const TestimonialBox = () => {
                   <span
                     className={`text-xl md:whitespace-nowrap ${
                       currentTestimonyIndex === index
-                        ? "font-bold text-ct-primary-100 "
-                        : " font-semibold text-ct-grey-600"
+                        ? 'font-bold text-ct-primary-100 '
+                        : ' font-semibold text-ct-grey-600'
                     }`}
                   >
                     {testimony.name}
@@ -113,8 +112,8 @@ const TestimonialBox = () => {
                 key={index}
                 className={`w-3 h-3 rounded-full mx-1 ${
                   currentTestimonyIndex === index
-                    ? "bg-ct-secondary-1100"
-                    : "bg-ct-secondary-500"
+                    ? 'bg-ct-secondary-1100'
+                    : 'bg-ct-secondary-500'
                 }`}
               />
             ))}

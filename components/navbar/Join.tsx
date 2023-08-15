@@ -1,14 +1,11 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import Button from "@/components/button";
-import { useState } from "react";
-import { AiOutlineClose } from "react-icons/ai";
-import { links } from "@/data/links";
-import { Menu } from "iconsax-react";
-
-
-
+import Link from 'next/link';
+import Button from '@/components/button';
+import { useState } from 'react';
+import { AiOutlineClose } from 'react-icons/ai';
+import { links } from '@/data/links';
+import { Menu } from 'iconsax-react';
 
 const Join = () => {
   const [navShow, setNavShow] = useState(false);
@@ -16,9 +13,9 @@ const Join = () => {
   const toggleNav = () => {
     setNavShow((status) => {
       if (status) {
-        document.body.style.overflow = "auto";
+        document.body.style.overflow = 'auto';
       } else {
-        document.body.style.overflow = "hidden";
+        document.body.style.overflow = 'hidden';
       }
       return !status;
     });
@@ -39,7 +36,7 @@ const Join = () => {
 
         <div
           className={`fixed top-0 left-0 z-10 h-full w-full transform bg-orange-100 bg-opacity-80 duration-300 ease-in-out dark:bg-gray-800 ${
-            navShow ? "translate-x-0" : "translate-x-full"
+            navShow ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
           <div className="flex justify-end">

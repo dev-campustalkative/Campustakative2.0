@@ -1,9 +1,8 @@
-"use client";
+'use client';
 
-import Button from "@/components/button";
-import ImageSlug from "@/components/image-slug";
-import { AiOutlineArrowDown } from "react-icons/ai";
-
+import Button from '@/components/button';
+import ImageSlug from '@/components/image-slug';
+import { AiOutlineArrowDown } from 'react-icons/ai';
 
 const Hero = () => {
   return (
@@ -20,7 +19,7 @@ const Hero = () => {
 
       <div
         style={{
-          backgroundImage: "url(/assets/icons/--ct-home-slug.svg)",
+          backgroundImage: 'url(/assets/icons/--ct-home-slug.svg)',
         }}
         className="w-[60%] m-auto bg-no-repeat bg-center bg-contain aspect-square relative mt-[60px] sm:w-[90%]"
       >
@@ -35,7 +34,7 @@ const Hero = () => {
         </div>
         <div className="absolute top-[120px] mxl:top-[220px] mxl:right-[120px] mmd:top-[160px] right-[50px] sm:top-[100px] sm:right-[40px] msm:w-[130px] msm:h-[130px] mmd:w-[190px] mmd:h-[190px] sm:w-[95px] sm:h-[95px]">
           <ImageSlug width={190} />
-        </div>{" "}
+        </div>{' '}
         <div className="absolute left-0 top-[140px] mmd:top-[200px] mxl:top-[260px]   msm:w-[110px] sm:top-[120px] msm:h-[110px] mmd:w-[150px] mmd:h-[150px] sm:w-[75px] sm:h-[75px]">
           <ImageSlug width={150} />
         </div>

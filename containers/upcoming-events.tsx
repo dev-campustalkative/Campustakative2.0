@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import EventsCard from "@/components/events-card";
-import Button from "@/components/button";
+import Image from 'next/image';
+import EventsCard from '@/components/events-card';
+import Button from '@/components/button';
 
 const UpcomingEvents = () => {
   return (

@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Date from "@/components/date";
-import Button from "@/components/button";
+import Image from 'next/image';
+import Date from '@/components/date';
+import Button from '@/components/button';
 
 const MainBlog = () => {
   return (
