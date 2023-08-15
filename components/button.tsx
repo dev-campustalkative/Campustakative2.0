@@ -24,6 +24,7 @@ const Button: React.FC<Props> = ({
   large,
   icon: Icon,
   type,
+  hoverText = 'Coming Soon',
   ...props
 }) => {
   return (
