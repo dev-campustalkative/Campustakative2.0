@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { IconType } from 'react-icons';
 
 interface Props {
@@ -27,6 +28,7 @@ const Button: React.FC<Props> = ({
   hoverText = 'Coming Soon',
   ...props
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <button
       onClick={onClick}
@@ -47,9 +49,11 @@ const Button: React.FC<Props> = ({
       
       ${className}`}
       type={type}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       {...props}
     >
-      <p className="whitespace-nowrap">{children}</p>
+      <p className="whitespace-nowrap"> {isHovered ? hoverText : children}</p>
       {Icon && <Icon size={18} className="" />}
     </button>
   );
