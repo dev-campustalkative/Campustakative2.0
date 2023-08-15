@@ -7,7 +7,9 @@ import Button from '@/components/button';
 const UpcomingEvents = () => {
   return (
     <div className="relative">
-      <div className="absolute w-full mx-auto h-full shadow-2xl z-50 bg-background/80 backdrop-blur-sm p-20"></div>
+      <div className="absolute w-full mx-auto h-full shadow-2xl z-50 bg-background/80 backdrop-blur-sm p-20">
+        Coming Soon
+      </div>
 
       <div className="py-12 md:py-8">
         <h2 className="text-ct-grey-1000 text-3xl font-bold font-sora my-2">
