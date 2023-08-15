@@ -53,7 +53,16 @@ const Button: React.FC<Props> = ({
       onMouseLeave={() => setIsHovered(false)}
       {...props}
     >
-      <p className="whitespace-nowrap"> {isHovered ? hoverText : children}</p>
+      <p className={`whitespace-nowrap ${isHovered ? 'invisible' : 'visible'}`}>
+        {children}
+      </p>
+      <p
+        className={`whitespace-nowrap absolute top-0 left-0 ${
+          isHovered ? 'visible' : 'invisible'
+        }`}
+      >
+        {hovertext}
+      </p>
       {Icon && <Icon size={18} className="" />}
     </button>
   );
