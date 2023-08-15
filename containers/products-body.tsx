@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Button from '@/components/button';
+import ComingSoonModal from '@/components/coming-soon-modal';
 
 const ProductsBody = () => {
   return (
@@ -29,7 +30,12 @@ const ProductsBody = () => {
             fostering a vibrant and supportive community for all.
           </p>
           <div>
-            <Button>Check out our store</Button>
+            <ComingSoonModal
+              title="Coming soon: Make a Difference with Your Donation"
+              text="We're thrilled to announce that our new donate feature is on its way! Soon, you'll be able to support our noble cause by making a donation. Every contribution will help us take important steps toward our mission. Whether it's helping the less fortunate, protecting the environment, or promoting social justice, your donation will play a crucial role in creating positive change. Stay tuned for updates on how you can be a part of this transformative journey."
+            >
+              <Button>Check out our store</Button>
+            </ComingSoonModal>
           </div>
         </div>
         <div className="md:hidden w-full h-full rounded-[32px] border border-ct-secondary-300 shadow-ct-lg transform mmd:rotate-12 ">
