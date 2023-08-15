@@ -25,7 +25,7 @@ const Button: React.FC<Props> = ({
   large,
   icon: Icon,
   type,
-  hoverText = 'Coming Soon',
+  hoverText,
   ...props
 }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -56,7 +56,11 @@ const Button: React.FC<Props> = ({
       <p className={`whitespace-nowrap ${isHovered ? 'invisible' : 'visible'}`}>
         {children}
       </p>
-      <p className={`whitespace-nowrap ${isHovered ? 'visible' : 'invisible'}`}>
+      <p
+        className={`whitespace-nowrap absolute ${
+          isHovered ? 'visible' : 'invisible'
+        }`}
+      >
         {hoverText}
       </p>
       {Icon && <Icon size={18} className="" />}
