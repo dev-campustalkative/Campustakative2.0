@@ -12,6 +12,7 @@ interface Props {
   large?: boolean;
   type?: 'button' | 'submit' | 'reset';
   icon?: IconType;
+  hoverText?: string;
 }
 const Button: React.FC<Props> = ({
   children,
