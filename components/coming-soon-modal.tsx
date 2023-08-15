@@ -11,18 +11,14 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 
-const ComingSoonModal = ({children, }) => {
+const ComingSoonModal = ({ children, text, title }) => {
   return (
     <Dialog>
-      <DialogTrigger asChild>
-        {children}
-      </DialogTrigger>
+      <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
-          <DialogDescription>
-            This feature is coming soon Please hold on.
-          </DialogDescription>
+          <DialogTitle>{title}</DialogTitle>
+          <DialogDescription>{text}</DialogDescription>
         </DialogHeader>
         <DialogFooter>
           <Button type="submit">Close</Button>
