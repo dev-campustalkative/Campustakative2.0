@@ -22,7 +22,7 @@ const ComingSoonModal: React.FC<Props> = ({ children, text, title }) => {
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="sm:max-w-[425px] rounded-lg p-10 shadow-lg">
         <DialogHeader>
-          <DialogTitle className="my-5 text-4xl font-bold">{title}</DialogTitle>
+          <DialogTitle className="my-5 text-3xl font-bold">{title}</DialogTitle>
           <DialogDescription>{text}</DialogDescription>
         </DialogHeader>
         <DialogFooter>
