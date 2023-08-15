@@ -61,7 +61,7 @@ const Button: React.FC<Props> = ({
           isHovered ? 'visible' : 'invisible'
         }`}
       >
-        {hovertext}
+        {hoverText}
       </p>
       {Icon && <Icon size={18} className="" />}
     </button>
