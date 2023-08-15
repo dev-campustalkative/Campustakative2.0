@@ -1,38 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
- 
+
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
- 
+
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
- 
+
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
- 
+
     --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
- 
+
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
- 
+
     --accent: 0 0% 96.1%;
     --accent-foreground: 0 0% 9%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
- 
+
     --ring: 0 0% 63.9%;
- 
+
     --radius: 0.5rem;
 
     --ct-primary-100: #fff7ec;
@@ -108,35 +108,35 @@
     --ct-green-1000: #023f25;
     --ct-green-1100: #012616;
   }
- 
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
- 
+
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
- 
+
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
- 
+
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
- 
+
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
- 
+
     --primary: 0 0% 98%;
     --primary-foreground: 0 0% 9%;
- 
+
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
- 
+
     --accent: 0 0% 14.9%;
     --accent-foreground: 0 0% 98%;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
- 
+
     --ring: 0 0% 14.9%;
   }
 }
@@ -150,100 +150,115 @@
   }
 }
 
-
- html,
-  body,
+html,
+body,
+:root {
+  height: 100%;
+}
+@media (prefers-color-scheme: dark) {
   :root {
-    height: 100%;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --foreground-rgb: 255, 255, 255;
-      --background-start-rgb: 0, 0, 0;
-      --background-end-rgb: 0, 0, 0;
-    }
-  }
+}
 
-  body {
-    color: rgb(var(--foreground-rgb));
-    background: var(--ct-primary-100);
-  }
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--ct-primary-100);
+}
 
-  @font-face {
-    font-family: "Sora";
-    src: url("/assets/fonts/Sora-Thin.ttf") format("truetype");
-    font-weight: 100;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Sora";
-    src: url("/assets/fonts/Sora-ExtraLight.ttf") format("truetype");
-    font-weight: 200;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Sora";
-    src: url("/assets/fonts/Sora-Light.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: "Sora";
-    src: url("/assets/fonts/Sora-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Sora";
-    src: url("/assets/fonts/Sora-Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Sora";
-    src: url("/assets/fonts/Sora-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Sora";
-    src: url("/assets/fonts/Sora-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: "Sora";
-    src: url("/assets/fonts/Sora-ExtraBold.ttf") format("truetype");
-    font-weight: 800;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: "Sora";
-    src: url("/assets/fonts/Sora-Black.ttf") format("truetype");
-    font-weight: 900;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
 
-  @keyframes spin {
-    100% {
-      transform: rotateZ(360deg);
-    }
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
   }
+}
 
-  .animate-spin {
-    animation: spin 5s linear infinite;
-  }
+.animate-spin {
+  animation: spin 5s linear infinite;
+}
 
-  /* CSS file */
-  .animate-pause {
-    animation-play-state: paused !important;
-  }
+/* CSS file */
+.animate-pause {
+  animation-play-state: paused !important;
+}
 
-  .bg-none-md {
-    @media screen and (max-width: 820px) {
-      background: none !important;
-    }
+.bg-none-md {
+  @media screen and (max-width: 820px) {
+    background: none !important;
   }
+}
+
+@keyframes animate-slide-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Optional: Adjust the animation duration and easing */
+.animate-slide-down {
+  animation: animate-slide-down 0.5s ease-out;
+}
