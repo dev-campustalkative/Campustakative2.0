@@ -56,11 +56,7 @@ const Button: React.FC<Props> = ({
       <p className={`whitespace-nowrap ${isHovered ? 'invisible' : 'visible'}`}>
         {children}
       </p>
-      <p
-        className={`whitespace-nowrap absolute top-0 left-0 ${
-          isHovered ? 'visible' : 'invisible'
-        }`}
-      >
+      <p className={`whitespace-nowrap ${isHovered ? 'visible' : 'invisible'}`}>
         {hoverText}
       </p>
       {Icon && <Icon size={18} className="" />}
