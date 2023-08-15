@@ -10,7 +10,7 @@ const Products = () => {
   return (
     <>
       <ComingSoonBanner>
-        We are launchong our product soon watch out
+        We are launching our product soon. Watch out for exciting updates!
       </ComingSoonBanner>
       <Container>
         <ProductsHeader />
