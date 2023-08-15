@@ -247,18 +247,18 @@ body {
   }
 }
 
-@keyframes animate-slide-down {
+@keyframes animate-gradient-slide {
   0% {
-    transform: translateY(-100%);
-    opacity: 0;
+    background-position: 0%;
   }
   100% {
-    transform: translateY(0);
-    opacity: 1;
+    background-position: 100%;
   }
 }
 
 /* Optional: Adjust the animation duration and easing */
-.animate-slide-down {
-  animation: animate-slide-down 0.5s ease-out;
+.animate-gradient-slide {
+  background-image: linear-gradient(45deg, #ff3f9f, #ff6ec4, #a25eff);
+  background-size: 200% 200%;
+  animation: animate-gradient-slide 3s linear infinite;
 }
