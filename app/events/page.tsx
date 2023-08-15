@@ -1,5 +1,3 @@
-'use client';
-
 import Container from '@/components/container';
 import Divider from '@/components/divider';
 import EventsHeader from '@/containers/events-header';
