@@ -10,17 +10,13 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 
-interface ComingSoonModalProps {
+interface Props {
   children: ReactNode;
   text: string;
   title: string;
 }
 
-const ComingSoonModal: React.FC<ComingSoonModalProps> = ({
-  children,
-  text,
-  title,
-}) => {
+const ComingSoonModal: React.FC<Props> = ({ children, text, title }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
