@@ -10,6 +10,7 @@ interface Props {
   className?: string;
   small?: boolean;
   large?: boolean;
+  type?: 'button' | 'submit' | 'reset';
   icon?: IconType;
 }
 const Button: React.FC<Props> = ({
