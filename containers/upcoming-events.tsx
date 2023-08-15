@@ -6,7 +6,9 @@ import Button from '@/components/button';
 
 const UpcomingEvents = () => {
   return (
-    <div>
+    <div className="relative">
+      <div></div>
+
       <div className="py-12 md:py-8">
         <h2 className="text-ct-grey-1000 text-3xl font-bold font-sora my-2">
           Upcoming events
@@ -16,6 +18,7 @@ const UpcomingEvents = () => {
           maintaining a strong community. That&lsquo;s why we are dedicated to
           providing the best resources and op
         </p>
+        d
       </div>
       <div>
         <div className="flex items-end gap-5 mxl:ml-[-8%] mxl:px-12 mxl:mb-[-65%] mmd:mt-[15%] xl:hidden ">
