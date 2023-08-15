@@ -42,7 +42,7 @@ const Button: React.FC<Props> = ({
       } 
       
       ${className}`}
-      ...props
+      {...props}
     >
       <p className="whitespace-nowrap">{children}</p>
       {Icon && <Icon size={18} className="" />}
