@@ -3,12 +3,13 @@
 import Image from 'next/image';
 import EventsCard from '@/components/events-card';
 import Button from '@/components/button';
+import { Card } from '@/components/ui/card';
 
 const UpcomingEvents = () => {
   return (
     <div className="relative">
       <div className="absolute w-full mx-auto h-full shadow-2xl z-50 bg-background/80 backdrop-blur-sm p-20 flex items-center justify-center">
-        Coming Soon
+        <Card>Coming Soon</Card>
       </div>
 
       <div className="py-12 md:py-8">
