@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import EventsCard from '@/components/events-card';
 import Button from '@/components/button';
@@ -34,7 +32,12 @@ const UpcomingEvents = () => {
             width={900}
           />
           <div className=" mmd:mb-[-1%]">
-            <Button>See more events</Button>
+            <ComingSoonModal
+              title="Coming soon: Make a Difference with Your Donation"
+              text="We're thrilled to announce that our new donate feature is on its way! Soon, you'll be able to support our noble cause by making a donation. Every contribution will help us take important steps toward our mission. Whether it's helping the less fortunate, protecting the environment, or promoting social justice, your donation will play a crucial role in creating positive change. Stay tuned for updates on how you can be a part of this transformative journey."
+            >
+              <Button hoverText="Coming soon!">See more events</Button>
+            </ComingSoonModal>
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-1 gap-8 md:gap-6 mxl:mb-[15%]">
