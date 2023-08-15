@@ -44,6 +44,7 @@ const Button: React.FC<Props> = ({
       } 
       
       ${className}`}
+      type={type}
       {...props}
     >
       <p className="whitespace-nowrap">{children}</p>
