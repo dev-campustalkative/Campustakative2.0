@@ -1,5 +1,4 @@
-'use client';
-
+import React, { ReactNode } from 'react';
 import Button from './button';
 import {
   Dialog,
@@ -11,7 +10,17 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 
-const ComingSoonModal = ({ children, text, title }) => {
+interface ComingSoonModalProps {
+  children: ReactNode;
+  text: string;
+  title: string;
+}
+
+const ComingSoonModal: React.FC<ComingSoonModalProps> = ({
+  children,
+  text,
+  title,
+}) => {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
