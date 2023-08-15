@@ -22,6 +22,7 @@ const Button: React.FC<Props> = ({
   small,
   large,
   icon: Icon,
+  type,
   ...props
 }) => {
   return (
