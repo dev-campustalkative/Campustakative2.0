@@ -18,9 +18,9 @@ interface Props {
 
 const ComingSoonModal: React.FC<Props> = ({ children, text, title }) => {
   return (
-    <Dialog className="rounded-full">
+    <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] rounded-lg p-">
         <DialogHeader>
           <DialogTitle>{title}</DialogTitle>
           <DialogDescription>{text}</DialogDescription>
