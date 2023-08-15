@@ -24,7 +24,6 @@ const ComingSoonModal = () => {
             Make changes to your profile here. Click save when you're done.
           </DialogDescription>
         </DialogHeader>
-        <div className="grid gap-4 py-4"></div>
         <DialogFooter>
           <Button type="submit">Close</Button>
         </DialogFooter>
