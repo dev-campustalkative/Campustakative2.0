@@ -18,7 +18,6 @@ const Join = () => {
       if (status) {
         document.body.style.overflow = "auto";
       } else {
-        // Prevent scrolling
         document.body.style.overflow = "hidden";
       }
       return !status;
