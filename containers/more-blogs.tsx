@@ -6,7 +6,7 @@ import { Card } from '@/components/ui/card';
 
 const MoreBlogs = () => {
   return (
-    <div className="pb-36 md:pb-12 relative">
+    <div className="pb-36 md:pb-12 relative my-10">
       <div className="absolute w-full mx-auto h-full shadow-2xl z-10 bg-background/80 backdrop-blur-sm p-20 flex items-center justify-center">
         <Card className="p-20 text-2xl font-bold font-sora">Coming Soon</Card>
       </div>

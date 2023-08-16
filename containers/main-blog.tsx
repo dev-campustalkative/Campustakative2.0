@@ -33,7 +33,7 @@ const MainBlog = () => {
             </p>
           </div>
           <div>
-            <Button>Get ticket</Button>
+            <Button>Read More</Button>
           </div>
         </div>
       </div>

@@ -1,8 +1,7 @@
-'use client';
-
 import Image from 'next/image';
 import Date from '@/components/date';
 import Button from '@/components/button';
+import ComingSoonModal from '@/components/coming-soon-modal';
 
 const MainEvent = () => {
   return (
@@ -33,7 +32,12 @@ const MainEvent = () => {
             </p>
           </div>
           <div>
-            <Button>Get ticket</Button>
+            <ComingSoonModal
+              title="Coming soon: Make a Difference with Your Donation"
+              text="We're thrilled to announce that our new donate feature is on its way! Soon, you'll be able to support our noble cause by making a donation. Every contribution will help us take important steps toward our mission. Whether it's helping the less fortunate, protecting the environment, or promoting social justice, your donation will play a crucial role in creating positive change. Stay tuned for updates on how you can be a part of this transformative journey."
+            >
+              <Button hoverText="Coming soon!">Get Tickets</Button>
+            </ComingSoonModal>
           </div>
         </div>
       </div>
