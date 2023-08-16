@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Button from '@/components/button';
+import ComingSoonModal from '@/components/coming-soon-modal';
 
 const Support = () => {
   return (
@@ -62,7 +63,14 @@ const Support = () => {
         </div>
         <div className="flex gap-6 mt-6">
           <div className="rounded-full w-full flex items-center justify-center overflow-hidden">
-            <Button className="h-full">Donate Now</Button>
+            <ComingSoonModal
+              title="Coming soon: Make a Difference with Your Donation"
+              text="We're thrilled to announce that our new donate feature is on its way! Soon, you'll be able to support our noble cause by making a donation. Every contribution will help us take important steps toward our mission. Whether it's helping the less fortunate, protecting the environment, or promoting social justice, your donation will play a crucial role in creating positive change. Stay tuned for updates on how you can be a part of this transformative journey."
+            >
+              <Button className="h-full" hoverText="Coming soon!">
+                Donate Now
+              </Button>
+            </ComingSoonModal>
           </div>
           <div className="rounded-full md:w-0">
             <Image

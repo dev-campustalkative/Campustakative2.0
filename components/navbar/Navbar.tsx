@@ -7,8 +7,8 @@ import Menu from '@/components/navbar/menu';
 
 const Navbar = () => {
   return (
-    <nav className="fixed w-full z-10">
-      <div className="py-4 ">
+    <nav className="fixed w-full z-50">
+      <div className="py-10 ">
         <Container>
           <div className="flex items-center justify-between gap-3 md:gap-0">
             <Logo />
